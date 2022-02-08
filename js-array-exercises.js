@@ -69,9 +69,29 @@ console.log(mapFirstNames);
 // ## FILTER
 
 // 1. Get characters with mass greater than 100
+const massGreaterThan100 = characters.filter((character) => {
+  return character.mass > 100;
+});
+
+console.log(massGreaterThan100);
+
 // 2. Get characters with height less than 200
+const heightLessThan200 = characters.filter((character) => {
+  return character.height < 200
+});
+console.log(heightLessThan200);
+
 // 3. Get all male characters
+const allMaleCharacters = characters.filter((character) => {
+  return character.gender === 'male'
+});
+console.log(allMaleCharacters)
 // 4. Get all female characters
+const allFermaleCharacters = characters.filter((character) => {
+  return character.gender === 'female'
+});
+console.log(allFermaleCharacters);
+
 
 // ## SORT
 
