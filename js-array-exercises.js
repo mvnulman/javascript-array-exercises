@@ -36,13 +36,13 @@ const mapAllNames = characters.map((character) => {
   return character.name;
 });
 
-console.log(mapAllNames);
+// console.log(mapAllNames);
 
 // 2. Get an array of all heights
 const mapAllHeights = characters.map((character) => {
   return character.height;
 });
-console.log(mapAllHeights);
+// console.log(mapAllHeights);
 
 // 3. Get an array of objects with just name and height properties
 const mapNameAndHeight = characters.map((character) => {
@@ -51,13 +51,13 @@ const mapNameAndHeight = characters.map((character) => {
     height: character.height,
   };
 });
-console.log(mapNameAndHeight);
+// console.log(mapNameAndHeight);
 
 // 4. Get an array of all first names
 const mapFirstNames = characters.map((character) => {
   return character.name.split(" ")[0];
 });
-console.log(mapFirstNames);
+// console.log(mapFirstNames);
 
 // ## REDUCE
 
@@ -73,32 +73,52 @@ const massGreaterThan100 = characters.filter((character) => {
   return character.mass > 100;
 });
 
-console.log(massGreaterThan100);
+// console.log(massGreaterThan100);
 
 // 2. Get characters with height less than 200
 const heightLessThan200 = characters.filter((character) => {
   return character.height < 200
 });
-console.log(heightLessThan200);
+// console.log(heightLessThan200);
 
 // 3. Get all male characters
 const allMaleCharacters = characters.filter((character) => {
   return character.gender === 'male'
 });
-console.log(allMaleCharacters)
+// console.log(allMaleCharacters)
 // 4. Get all female characters
 const allFermaleCharacters = characters.filter((character) => {
   return character.gender === 'female'
 });
-console.log(allFermaleCharacters);
+// console.log(allFermaleCharacters);
 
 
 // ## SORT
-
 // 1. Sort by name
+const byName = characters.sort((a, b) => {
+  if(b.name < a.name) return 1;
+  return -1
+})
+console.log( byName )
+
 // 2. Sort by mass
+const byMass = characters.sort((a, b) => {
+  if(b.mass < a.mass) return 1;
+  return -1
+})
+console.log( byMass )
+
 // 3. Sort by height
+const byHeight = characters.sort((a, b) => {
+  if(b.height < a.height) return 1;
+  return -1
+})
+console.log( byHeight )
+
 // 4. Sort by gender
+const byGender = characters.sort((a, b) => {
+})
+
 
 // ## EVERY
 
