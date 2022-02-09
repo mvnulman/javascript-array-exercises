@@ -123,6 +123,11 @@ const byGender = characters.sort((a, b) => {
 // ## EVERY
 
 // 1. Does every character have blue eyes?
+const doesHaveBlueEyes = characters.every(character => {
+  return character.eye_color === "blue"
+})
+console.log(doesHaveBlueEyes)
+
 // 2. Does every character have mass more than 40?
 // 3. Is every character shorter than 200?
 // 4. Is every character male?
