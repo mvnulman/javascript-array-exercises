@@ -173,6 +173,24 @@ const isEveryCharacterMale = characters.every((character) => {
 // ## SOME
 
 // 1. Is there at least one male character?
+const atLeastOneMale = characters.some((character) => {
+  return character.gender === "male";
+})
+console.log(atLeastOneMale)
+
 // 2. Is there at least one character with blue eyes?
-// 3. Is there at least one character taller than 200?
+const atLeastOneWithBlueEyes = characters.some((character => character.eye_color === "blue"))
+console.log(atLeastOneWithBlueEyes)
+
+// 3. Is there at least one character taller than 210?
+const atLeastOneTallerThan200 = characters.some((character) => {
+  character.height > 200;
+})
+console.log(atLeastOneTallerThan200)
+
 // 4. Is there at least one character that has mass less than 50?
+
+const massLess2 = characters.some((character) => {
+  return character.mass < 50;
+})
+console.log(massLess2)
