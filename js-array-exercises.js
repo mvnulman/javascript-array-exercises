@@ -99,21 +99,21 @@ const byName = characters.sort((a, b) => {
   if(b.name < a.name) return 1;
   return -1
 })
-console.log( byName )
+// console.log( byName )
 
 // 2. Sort by mass
 const byMass = characters.sort((a, b) => {
   if(b.mass < a.mass) return 1;
   return -1
 })
-console.log( byMass )
+// console.log( byMass )
 
 // 3. Sort by height
 const byHeight = characters.sort((a, b) => {
   if(b.height < a.height) return 1;
   return -1
 })
-console.log( byHeight )
+// console.log( byHeight )
 
 // 4. Sort by gender
 const byGender = characters.sort((a, b) => {
@@ -129,8 +129,22 @@ const doesHaveBlueEyes = characters.every(character => {
 console.log(doesHaveBlueEyes)
 
 // 2. Does every character have mass more than 40?
+const doesHaveMoreThan40 = characters.every(character => {
+  return character.mass > 40
+});
+console.log(doesHaveMoreThan40)
+
 // 3. Is every character shorter than 200?
+const doesHaveShorterThan200 = characters.every (character => {
+  return character.every < 200
+});
+console.log(doesHaveShorterThan200)
+
 // 4. Is every character male?
+const isEveryCharacterMale = characters.every(character => {
+  return character.every === "male"
+});
+console.log(isEveryCharacterMale)
 
 // ## SOME
 
